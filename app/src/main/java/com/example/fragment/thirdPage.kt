@@ -1,10 +1,9 @@
 package com.example.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.Fragment
 
 class thirdPage : Fragment(R.layout.fragment_third_page) {
 
@@ -12,14 +11,14 @@ class thirdPage : Fragment(R.layout.fragment_third_page) {
         super.onViewCreated(view, savedInstanceState)
 
         val logAccTextView: TextView = view.findViewById(R.id.logAcc)
-
         logAccTextView.setOnClickListener {
             val secondPageFragment = secondPage()
 
             parentFragmentManager.beginTransaction()
-                .replace(R.id.secondPage, secondPageFragment)
+                .replace(R.id.main, secondPageFragment)
                 .addToBackStack(null)
                 .commit()
         }
     }
 }
+

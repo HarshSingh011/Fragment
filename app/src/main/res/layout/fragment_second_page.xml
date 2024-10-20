@@ -5,7 +5,7 @@
     android:id="@+id/secondPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".secondPage">
+    tools:context=".SecondPage">
 
     <TextView
 
@@ -173,6 +173,10 @@
         android:scaleType="fitCenter"
         />
 
+    <FrameLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

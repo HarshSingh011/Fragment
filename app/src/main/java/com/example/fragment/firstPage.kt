@@ -13,7 +13,7 @@ class FirstPage : Fragment(R.layout.fragment_first_page) {
 
         view.findViewById<Button>(R.id.log).setOnClickListener {
             parentFragmentManager.commit {
-                replace(R.id.main, SecondPage())
+                replace(R.id.main, secondPage())
                 addToBackStack(null)
             }
         }
