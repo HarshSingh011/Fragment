@@ -5,8 +5,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.navgraph.R
 
-class MainActivity : AppCompatActivity() {
+public class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,4 +27,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-
